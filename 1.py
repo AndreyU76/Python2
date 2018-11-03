@@ -95,6 +95,29 @@ b'function'
 >>> bytes2
 b'method'
 
+ bytes1 = b'attribute'
+>>> bytes1.hex()
+'617474726962757465'
+>>> bytes2 =b'\x61\x74\x74\x72\x69\x62\x75\x74\x65'
+>>> bytes2
+b'attribute'
 
+ bytes1 = b'класс'
+  File "<stdin>", line 1
+SyntaxError: bytes can only contain ASCII literal characters.
+ 
+  bytes1 = b'функция'
+  File "<stdin>", line 1
+SyntaxError: bytes can only contain ASCII literal characters.
+ 
+ bytes1 = b'type'
+>>> bytes1.hex()
+'74797065'
+>>> bytes2 =b'\x74\x79\x70\x65'
+>>>
+>>> bytes2
+b'type'
+
+ 
 
 
